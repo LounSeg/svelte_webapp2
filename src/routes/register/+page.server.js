@@ -8,21 +8,28 @@ export const actions = {
         const data = await request.formData();
         //console.log(data.get('username'))
 
-        const body = await api.post('users/login', {
-                username: data.get('username'),
-                password: data.get('password')
+        const body2 = await api.post('users/register', {
+                username: data.get('username2'),
+                password: data.get('password2')
+        });
+
+        const body1 = await api.post('users/login', {
+            username: data.get('username2'),
+            password: data.get('password2')
         });
 
         //console.log(body);
 
-        if (body.result) {
-            const value = body.result.jwt;
+        if (body1.result) {
+            const value = body2.result.jwt;
             cookies.set('jwt', value, { path: '/' });
             locals.user = await api.get('users/me', value)
         }
 
         //goto('/locations');
         //throw redirect(307, '/locations');
-        return body;
+        return body1;
     }
 };
+
+//cookies.remove({name: "jwt"});

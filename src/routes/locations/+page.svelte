@@ -4,11 +4,11 @@
 </script>
 <h1>Locations</h1>
 <thead>
-<!--<tr>
+<tr>
     {#each Object.keys(data.locations[0]) as columnHeading}
         <th>{columnHeading}</th>
     {/each}
-<tr/>-->
+</tr>
 </thead>
 <tbody>
 {#each Object.values(data.locations) as row}

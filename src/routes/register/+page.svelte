@@ -11,13 +11,13 @@
 </script>
 
 <div class="main">
-    <div class="login">
+    <div class="signup">
         <form method="POST">
-            <label for="chk" aria-hidden="true">Login</label>
-            <input type="text" name="username" placeholder="Username" />
-            <input type="password" name="password" placeholder="Password" />
-            <button type="submit">Login</button>
+            <label for="chk" aria-hidden="true">Sign up</label>
+            <input type="text" name="username2" placeholder="Username">
+            <input type="password" name="password2" placeholder="Password">
+            <button type="submit">Sign Up</button>
         </form>
     </div>
 </div>
-<a href="/register">Register</a>
+<a href="/login">Login</a>
