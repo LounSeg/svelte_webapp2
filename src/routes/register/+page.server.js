@@ -21,7 +21,7 @@ export const actions = {
         //console.log(body);
 
         if (body1.result) {
-            const value = body2.result.jwt;
+            const value = body1.result.jwt;
             cookies.set('jwt', value, { path: '/' });
             locals.user = await api.get('users/me', value)
         }
