@@ -31,5 +31,3 @@ export const actions = {
         return body1;
     }
 };
-
-//cookies.remove({name: "jwt"});
