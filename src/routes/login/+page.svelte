@@ -20,4 +20,4 @@
         </form>
     </div>
 </div>
-<a href="/register">Register</a>
+<a href="/register">Créer un compte</a>
