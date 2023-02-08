@@ -42,10 +42,10 @@ Veuillez refresh la page si le bouton "New Location" n'apparait pas si dessous
         {/each}
         {#if data.user.role === 'admin'}
             <td>
-                <a href="/locations/{location.id}/edit">Edit</a>
+                <a href="/locations/{row._id}/edit">Edit</a>
             </td>
             <td>
-                <form action="/locations/{location.id}/delete" method="POST">
+                <form action="/locations/{row._id}/delete" method="POST">
                     <input type="submit" value="Delete"/>
                 </form>
             </td>
