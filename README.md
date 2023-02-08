@@ -19,7 +19,9 @@ un champ lors de la création d'un compte, et qui créera un
 compte admin si ce code est présent dans la base de donnée 
 dans une table "codes" par exemple.  
 On peut également de connecté aux comptes admin et user sur 
-la page login
+la page login  
+J'ai passé énormément de temps à trouver comment se déconnecter
+et enlever le cookie jwt, et n'y suis pas parvenu
 ## US2 : Redirection vers la page principale si l'on n'est pas connecté
 J'ai utilisé "redirect" pour cela
 ## US3 : Voir le tableau des locations (et détails)
